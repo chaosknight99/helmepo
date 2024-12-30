@@ -1,0 +1,96 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Overall background and layout */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;  /* Soft grey background */
+  color: #333;  /* Dark text for readability */
+  text-align: center;
+}
+
+/* Header Styles */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;  /* Space between buttons and counter display */
+}
+
+/* Counter Display Styles */
+.counter-display p {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow for floating effect */
+  width: 120px;
+  text-align: center;
+}
+
+/* Button Styles */
+.button {
+  font-size: 2.5rem;
+  padding: 20px 40px;  /* Larger padding for larger buttons */
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #ffcc00;  /* Bright yellow color for buttons */
+  color: #fff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);  /* Button shadow */
+}
+
+/* Button Hover Effect */
+.button:hover {
+  transform: scale(1.1);  /* Slight scaling on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
+}
+
+.button:active {
+  transform: scale(1);  /* Button click animation */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button style for increment and decrement */
+.increment {
+  background-color: #ffcc00;  /* Yellow button color */
+}
+
+.decrement {
+  background-color: #ff9900;  /* Slightly darker yellow/orange for decrement */
+}
